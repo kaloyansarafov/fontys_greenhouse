@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0"></script>
+</head>
+<body>
+<div class="container mx-auto mt-4">
+    <h1 class="text-2xl font-bold">Sensor Data for {{ sensor_id }}</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="w-full p-2">
+            <canvas id="overviewChart" height="400"></canvas>
+        </div>
+        <div class="w-full p-2">
+            <canvas id="temperatureChart" height="400"></canvas>
+        </div>
+        <div class="w-full p-2">
+            <canvas id="humidityChart" height="400"></canvas>
+        </div>
+        <div class="w-full p-2">
+            <canvas id="lightChart" height="400"></canvas>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const data = {{data | tojson | safe}};
+        const settings = {{settings | tojson | safe}};
+
+        console.log(data);
+        console.log(settings);
+
+        const globalSettings = settings.global;
+        const sensorSettings = settings[data[0].sensor_id] || globalSettings;
+
+        console.log(globalSettings);
+        console.log(sensorSettings);
+
+        const labels = data.map(entry => new Date(entry.timestamp).getTime());
+        const temperatures = data.map(entry => entry.temperature);
+        const humidities = data.map(entry => entry.humidity);
+        const lights = data.map(entry => entry.light);
+
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    type: 'time',
+                    time: {
+                        unit: 'day'
+                    },
+                    title: {
+                        display: true,
+                        text: 'Timestamp'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Value'
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                }
+            },
+            plugins: {
+                zoom: {
+                    pan: {
+                        enabled: true,
+                        mode: 'x',
+                    },
+                    zoom: {
+                        wheel: {
+                            enabled: true
+                        },
+                        pinch: {
+                            enabled: true
+                        },
+                        mode: 'x'
+                    }
+                }
+            }
+        };
+
+        const overviewCtx = document.getElementById('overviewChart').getContext('2d');
+        const temperatureCtx = document.getElementById('temperatureChart').getContext('2d');
+        const humidityCtx = document.getElementById('humidityChart').getContext('2d');
+        const lightCtx = document.getElementById('lightChart').getContext('2d');
+
+        new Chart(overviewCtx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Temperature',
+                        data: temperatures,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        fill: false,
+                    },
+                    {
+                        label: 'Humidity',
+                        data: humidities,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        fill: false,
+                    },
+                    {
+                        label: 'Light',
+                        data: lights,
+                        borderColor: 'rgba(255, 206, 86, 1)',
+                        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                        fill: false,
+                    }
+                ]
+            },
+            options: commonOptions
+        });
+
+        new Chart(temperatureCtx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Temperature',
+                    data: temperatures,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    fill: false,
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    annotation: {
+                        annotations: {
+                            tempBox: {
+                                type: 'box',
+                                yScaleID: 'y',
+                                yMin: sensorSettings.temp_min,
+                                yMax: sensorSettings.temp_max,
+                                backgroundColor: 'rgba(255, 99, 132, 0.25)',
+                                borderColor: 'rgba(255, 99, 132, 0.5)',
+                                borderWidth: 1,
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(humidityCtx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Humidity',
+                    data: humidities,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: false,
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    annotation: {
+                        annotations: {
+                            humidityBox: {
+                                type: 'box',
+                                yScaleID: 'y',
+                                yMin: sensorSettings.humidity_min,
+                                yMax: sensorSettings.humidity_max,
+                                backgroundColor: 'rgba(54, 162, 235, 0.25)',
+                                borderColor: 'rgba(54, 162, 235, 0.5)',
+                                borderWidth: 1,
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(lightCtx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Light',
+                    data: lights,
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                    fill: false,
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    annotation: {
+                        annotations: {
+                            lightBox: {
+                                type: 'box',
+                                yScaleID: 'y',
+                                yMin: sensorSettings.light_min,
+                                yMax: sensorSettings.light_max,
+                                backgroundColor: 'rgba(255, 206, 86, 0.25)',
+                                borderColor: 'rgba(255, 206, 86, 0.5)',
+                                borderWidth: 1,
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+[
+  {
+    "temp_min": 18,
+    "temp_max": 30,
+    "humidity_min": 35,
+    "humidity_max": 60,
+    "light_min": 100,
+    "light_max": 200
+  }
+]

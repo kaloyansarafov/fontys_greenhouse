@@ -1,0 +1,11 @@
+[
+    {
+        "internal_name": "Center Sensor",
+        "temp_min": 25,
+        "temp_max": 29,
+        "humidity_min": 35,
+        "humidity_max": 60,
+        "light_min": 120,
+        "light_max": 210
+    }
+]

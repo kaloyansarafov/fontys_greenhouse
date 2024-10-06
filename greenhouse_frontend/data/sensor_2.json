@@ -1,0 +1,408 @@
+[
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:49:22.459953"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:49:28.009108"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:49:33.535901"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:49:39.081094"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 164.6981,
+        "timestamp": "2024-09-27T10:49:44.622816"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 27,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:49:50.138685"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:49:55.688112"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:50:01.223268"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:50:06.750440"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 174.4911,
+        "timestamp": "2024-09-27T10:50:12.313573"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:50:17.834928"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:50:23.381932"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 174.4911,
+        "timestamp": "2024-09-27T10:50:28.934123"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:50:34.447834"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:50:39.986510"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 189.7642,
+        "timestamp": "2024-09-27T10:50:45.520736"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 40,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:50:51.075309"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 27,
+        "humidity": 38,
+        "light": 164.6981,
+        "timestamp": "2024-09-27T10:50:56.608495"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:51:02.148349"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 159.2168,
+        "timestamp": "2024-09-27T10:51:07.677157"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:51:13.235098"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:51:18.765788"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:51:24.296447"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 162.8397,
+        "timestamp": "2024-09-27T10:51:29.852212"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:51:35.392692"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:51:40.935580"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:51:46.450117"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:51:51.987778"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:51:57.549131"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:52:03.079264"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 164.6981,
+        "timestamp": "2024-09-27T10:52:08.622910"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 178.6578,
+        "timestamp": "2024-09-27T10:52:14.173199"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:52:19.702253"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:52:25.233815"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 178.6578,
+        "timestamp": "2024-09-27T10:52:30.779588"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:52:36.310205"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:52:41.862326"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 164.6981,
+        "timestamp": "2024-09-27T10:52:47.401368"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:52:52.939390"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 38,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:52:58.484270"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 38,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:53:03.995274"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:53:09.531515"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:53:15.073764"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:53:20.631734"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:53:26.171497"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 38,
+        "light": 170.4704,
+        "timestamp": "2024-09-27T10:53:31.701091"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 38,
+        "light": 172.463,
+        "timestamp": "2024-09-27T10:53:37.231217"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:53:42.769472"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:53:48.291860"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:53:53.853209"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:53:59.372354"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:54:04.909017"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 166.5889,
+        "timestamp": "2024-09-27T10:54:10.450149"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:54:16.000199"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:54:21.526108"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 178.6578,
+        "timestamp": "2024-09-27T10:54:27.079800"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:54:32.637840"
+    },
+    {
+        "sensor_id": "sensor_2",
+        "temperature": 28,
+        "humidity": 39,
+        "light": 168.5127,
+        "timestamp": "2024-09-27T10:54:38.152439"
+    }
+]
